@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "244632002792",
+    "firebase_url": "https://demokhoaluan-d5b24-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "demokhoaluan-d5b24",
+    "storage_bucket": "demokhoaluan-d5b24.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244632002792:android:10f3c5c19946d1d2fa295d",
+        "android_client_info": {
+          "package_name": "com.example.khoaluantn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "244632002792-bp70sk3qsupkpimufgcng63umc17tf30.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7GTWSg9f_Mohy7RM6PlZF9z0tCxRZ3n8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "244632002792-bp70sk3qsupkpimufgcng63umc17tf30.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

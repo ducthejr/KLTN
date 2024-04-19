@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".clock">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Hẹn giờ"
+            android:textSize="30sp" />
+    </androidx.cardview.widget.CardView>
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:timePickerMode="spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+    </TimePicker>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timePicker">
+
+        <Button
+            android:id="@+id/ledstop"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:text="STOP"
+            android:textSize="10sp" />
+        <Button
+            android:id="@+id/btledon"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="SET TIME LED ON" />
+
+        <Button
+            android:id="@+id/btledoff"
+            android:layout_width="100dp"
+            android:textSize="10sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:text="SET TIME LED OFF" />
+
+        <TextView
+            android:id="@+id/ledon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginLeft="5dp"
+            android:text=""
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/ledoff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="5dp"
+            android:text=""
+            android:textSize="10sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+        <Button
+            android:id="@+id/fanstop"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:text="STOP"
+            android:textSize="10sp" />
+        <Button
+            android:id="@+id/btfanon"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="SET TIME FAN ON"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btfanoff"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:text="SET TIME FAN OFF"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/fanon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginLeft="5dp"
+            android:text=""
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/fanoff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="5dp"
+            android:text=""
+            android:textSize="10sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+        <Button
+            android:id="@+id/mbstop"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:text="STOP"
+            android:textSize="10sp" />
+        <Button
+            android:id="@+id/btmbon"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="SET TIME MB ON" />
+
+        <Button
+            android:id="@+id/btmboff"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:layout_gravity="center|top"
+            android:text="SET TIME MB OFF" />
+
+        <TextView
+            android:id="@+id/mbnon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginLeft="5dp"
+            android:text=""
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/mboff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="5dp"
+            android:text=""
+            android:textSize="10sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4">
+
+        <Button
+            android:id="@+id/btsvon"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="SET TIME SERVO ON" />
+
+        <TextView
+            android:id="@+id/svnon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:text=""
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/servostop"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:text="STOP"
+            android:textSize="10sp" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
